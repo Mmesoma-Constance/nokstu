@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "scripts": 
+  {"build": "tailwindcss build ./src/input.css -o ./public/output.css"}
+
+}
+
