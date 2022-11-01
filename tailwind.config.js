@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       height: {
         '128': '36rem',
+        'tall': '40rem',
+        '100%': '100%',
+        '71': '261.5px',
       },
       fontSize: {
         '4/5xl': '200px',
@@ -14,6 +17,7 @@ module.exports = {
         'semi-wide': '23%',
         'sm-wide': '76%',
         'smx-wide': '64%',
+        'wide-sm': '50%',
       },
 
     },
