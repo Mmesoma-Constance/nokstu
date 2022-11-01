@@ -27,6 +27,16 @@ input[id=username] {
   box-sizing: border-box;
 }
 
+input[id=search2]  {
+  padding: 4px 20px;
+  width: 100%;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  background-color: rgba(220, 220, 220, 0.096);
+}
+
 /* Set a style for all buttons */
 #btn {
   
@@ -156,7 +166,6 @@ span.psw {
   z-index: 1;
   top: 0;
   left: 0;
- 
  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
@@ -165,7 +174,7 @@ span.psw {
 .overlay-content {
   position: relative;
   top: 10%;
-  width: 100%;
+
 }
 
 .overlay a {
@@ -217,16 +226,15 @@ span.psw {
 }
 
 .topnav a {
-  float: left;
-  display: block;
+ 
   color: black;
-  text-align: center;
   text-decoration: none;
   border-bottom: 3px solid transparent;
 }
 
 .topnav a:hover {
   border-bottom: 3px solid blue;
+  color: blue;
 }
 
 .topnav a.active {

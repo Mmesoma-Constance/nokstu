@@ -823,6 +823,10 @@ video {
   height: 16rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -863,12 +867,12 @@ video {
   width: auto;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
 .w-36 {
   width: 9rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-5\/6 {
@@ -1366,6 +1370,11 @@ video {
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-500:hover {

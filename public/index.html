@@ -16,7 +16,7 @@
 
     <header class="text-gray-600 body-font fixed bg-white z-10 w-full shadow-md hidden lg:block">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center h-20 ">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 " href="../public/index.html">
             <img src="../public/images/WhatsApp Documents/NOK 3.jpg" alt="" class="w-16 h-12">
             <span class="ml-1 text-3xl">Studio</span>
           </a>
@@ -136,7 +136,7 @@
 
       <header class="text-gray-600 body-font fixed bg-white z-10 w-full shadow-md lg:hidden ">
         <div class="container mx-auto flex  p-4  flex-row w-full  h-20 justify-between">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="../public/index.html">
             <img src="../public/images/WhatsApp Documents/NOK 3.jpg" alt="" class="w-16 h-12">
             <span class="ml-1 text-3xl">Studio</span>
           </a>
@@ -154,10 +154,12 @@
      
  
   
-  <div id="myNav" class="overlay">
+  <div id="myNav" class="overlay ">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content text-2xl ">
-      <div class="p-4">
+    <div class="overlay-content  text-2xl "><br>
+      <div class="p-4 rounded">
+ <input type="text" id="search2" placeholder="search NokStudio.." name="psw" class="" required></div>
+      <div class="p-4 w-36">
       <a href="product.html" id="links" class="mr-5 hover:text-blue-800">Product </a>
             <a href="explore.html" id="links" class="mr-5 hover:text-blue-800">Explore</a>
             <a href="forum.html" id="links" class="mr-5 hover:text-blue-800">Forum</a>
@@ -165,7 +167,7 @@
             <a href="contact.html" id="links" class="mr-5 hover:text-blue-800">Contact</a>
             <a href="services.html" id="links" class="mr-5 hover:text-blue-800">Services</a>
          </div>
-         <div class="bg-gray-200 h-71 p-4 space-y-5">
+         <div class="bg-gray-200 h-36 p-4 space-y-5">
           <button onclick="document.getElementById('id05').style.display='block'" 
           class=" inline-flex items-center bg-blue-600 border-0 py-1 px-3 focus:outline-none 
          hover:bg-blue-700 text-base mt-4 md:mt-0 rounded-full text-white">
@@ -257,8 +259,6 @@
 
 <!-----------------------------------------image------------------------------------------>
 
-
-<!----------------------------------latest job---------------------------------------->
 
 
 <div class="relative">
@@ -847,31 +847,7 @@
   </footer>
 
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById('id01', 'id02', 'id03');
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-
-
-    </script>
+  <script src="index.js"></script>
     
 
 
