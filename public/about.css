@@ -240,6 +240,7 @@ input[id=search] {
   .topnav a.active {
     border-bottom: 3px solid blue;
     color: blue;
+    background-color: transparent;
   }
   
   

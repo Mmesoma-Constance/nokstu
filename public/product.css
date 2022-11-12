@@ -227,7 +227,6 @@ input[id=search] {
   
   .topnav a {
    
-    color: black;
     text-decoration: none;
     border-bottom: 3px solid transparent;
   }
@@ -349,3 +348,13 @@ input[id=search] {
     color: black;
     } 
     
+
+    aside {
+      width: 20%;
+    }
+
+    .body-content {
+      width: 80%;
+      float: right;
+     
+    }

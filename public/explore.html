@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="output.css">
      <script src="https://cdn.tailwindcss.com"></script>
      <script src="https://kit.fontawesome.com/5a0914105d.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="explore.css">
 </head>
 <body>
     
 
   <header class="text-gray-600 body-font fixed bg-white z-10 w-full shadow-md hidden lg:block">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center h-20 ">
+
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 " href="../public/index.html">
         <img src="../public/images/WhatsApp Documents/NOK 3.jpg" alt="" class="w-16 h-12">
         <span class="ml-1 text-3xl">Studio</span>
       </a>
-      <nav class="topnav hidden lg:block md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base text-black justify-center">
-        <a href="product.html" id="links" class="active mr-5 hover:text-blue-900">Product </a>
-        <a href="explore.html" id="links" class="mr-5 hover:text-blue-900">Explore</a>
-        <a href="forum.html" id="links" class="mr-5 hover:text-blue-900">Forum</a>
-        <a href="about.html" id="links" class="mr-5 hover:text-blue-900">About</a>
-        <a href="contact.html" id="links" class="mr-5 hover:text-blue-900">Contact</a>
-        <a href="services.html" id="links" class="mr-5 hover:text-blue-900">Services</a>
-       
+     
+      <nav class="topnav hidden lg:block md:ml-auto md:mr-auto flex flex-wrap items-center text-base  justify-center">
+        <a href="product.html" id="links" class=" text-blue-600 mr-5 hover:text-blue-900">Projects </a> 
+        <a id="links" class="mr-5 hover:text-blue-900">|</a>
+            <a href="explore.html" id="links" class="mr-5 hover:text-blue-900">Explore</a>  
+            <a id="links" class="mr-5 hover:text-blue-900">|</a>
+            <a href="forum.html" id="links" class="mr-5 hover:text-blue-900">Forum</a>
+            <a id="links" class="mr-5 hover:text-blue-900">|</a>
+            <a href="about.html" id="links" class="mr-5 hover:text-blue-900">About</a>
+            <a id="links" class="mr-5 hover:text-blue-900">|</a>
+            <a href="contact.html" id="links" class="mr-5 hover:text-blue-900">Contact</a>
+            <a id="links" class="mr-5 hover:text-blue-900">|</a>
+            <a href="services.html" id="links" class="mr-5 hover:text-blue-900">Services</a> 
+           
       </nav>
       <h6 class="px-8 text-2xl text-blue-600 cursor-pointer"> 
         <button onclick="document.getElementById('id03').style.display='block'" 
@@ -59,75 +66,77 @@
         </svg>
       </button>
 
-       <div id="id01" class="modal h-100%">
-         
-         <form class="modal-content w-full mx-auto my-0 md:my-4 lg:my-16 h-tall md:h-auto md:w-smx-wide lg:w-wide-sm animate" action="/action_page.php" method="post">
-           <div class="imgcontainer">
-            <h2 class="text-3xl"><b>Welcome Back!</b></h2>
-             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-           </div> <br>
-       
-           <div class="container5">
-            
-             <label for="uname"><b>Username</b></label>
-             <input type="text" id="username" placeholder="Enter Username" name="uname" required> <br>
-       
-             <label for="psw"><b>Password</b></label>
-             <input type="password" id="username" placeholder="Enter Password" name="psw" required> <br>
-               
-             <button type="submit" id="btn" class="bg-blue-500 rounded hover:bg-blue-600">Login</button>
-             <label>
-               <input type="checkbox" id="remember" checked="checked" name="remember"> Remember me
-             </label>
-           </div>
-           
-         </form>
-       </div>
 
-       <!--------------------------signup------------------------------------>
-       
-       <button onclick="document.getElementById('id02').style.display='block'" 
-       class="hidden lg:block inline-flex items-center bg-transparent py-1 px-3 focus:outline-none border-2 border-blue-600 hover:border-0 w-auto
-       hover:bg-gray-200 rounded-full text-base ml-6 mt-4 md:mt-0 text-blue-700">
-        Get Started
-       
-     </button>
-
-      <div id="id02" class="modal h-100% mt-0 ">
-        
-        <form class="modal-content w-full mx-auto my-0 md:my-4 lg:my-16 h-tall md:h-128 md:w-smx-wide lg:w-wide-sm animate" action="/action_page.php" method="post">
+          
+      <div id="id01" class="modal h-100%">
+             
+        <form class="modal-content w-full mx-auto my-0 md:my-4 lg:my-16 h-tall md:h-auto md:w-smx-wide lg:w-wide-sm animate" action="/action_page.php" method="post">
           <div class="imgcontainer">
-           <h2 class="text-3xl"><b>Join NOKstudio today!</b></h2>
-            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <h2 class="text-3xl"><b>Welcome Back!</b></h2>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
           </div> <br>
       
           <div class="container5">
            
-            <label for="uname"><b>Email</b></label>
+            <label for="uname"><b>Username</b></label>
             <input type="text" id="username" placeholder="Enter Username" name="uname" required> <br>
       
             <label for="psw"><b>Password</b></label>
             <input type="password" id="username" placeholder="Enter Password" name="psw" required> <br>
-
-            <label for="psw"><b>Repeat Password</b></label>
-<input type="password" placeholder="Repeat Password" name="psw-repeat" id="username" required> <br>
-
-<p>By creating an account you agree to our <a href="#" class="underline text-slate-700 hover:text-blue-500">Terms & Privacy</a>.</p>
-
               
             <button type="submit" id="btn" class="bg-blue-500 rounded hover:bg-blue-600">Login</button>
             <label>
               <input type="checkbox" id="remember" checked="checked" name="remember"> Remember me
             </label>
           </div>
-      
           
         </form>
       </div>
+
+      <!--------------------------signup------------------------------------>
       
+      <button onclick="document.getElementById('id02').style.display='block'" 
+      class="hidden lg:block inline-flex items-center bg-transparent py-1 px-3 focus:outline-none border-2 border-blue-600 hover:border-0 w-auto
+      hover:bg-gray-200 rounded-full text-base ml-6 mt-4 md:mt-0 text-blue-700">
+       Get Started
+      
+    </button>
+
+     <div id="id02" class="modal h-100% mt-0 ">
+       
+       <form class="modal-content w-full mx-auto my-0 md:my-4 lg:my-16 h-tall md:h-128 md:w-smx-wide lg:w-wide-sm animate" action="/action_page.php" method="post">
+         <div class="imgcontainer">
+          <h2 class="text-3xl"><b>Join NOKstudio today!</b></h2>
+           <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+         </div> <br>
+     
+         <div class="container5">
+          
+           <label for="uname"><b>Email</b></label>
+           <input type="text" id="username" placeholder="Enter Username" name="uname" required> <br>
+     
+           <label for="psw"><b>Password</b></label>
+           <input type="password" id="username" placeholder="Enter Password" name="psw" required> <br>
+
+           <label for="psw"><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="psw-repeat" id="username" required> <br>
+
+<p>By creating an account you agree to our <a href="#" class="underline text-slate-700 hover:text-blue-500">Terms & Privacy</a>.</p>
+
+             
+           <button type="submit" id="btn" class="bg-blue-500 rounded hover:bg-blue-600">Login</button>
+           <label>
+             <input type="checkbox" id="remember" checked="checked" name="remember"> Remember me
+           </label>
+         </div>
+     
+         
+       </form>
+     </div>
 
     </div>
   </header>
+   
 
 <!----------------------------------on small screen------------------------------------>
 
@@ -159,7 +168,7 @@
 <input type="text" id="search2" placeholder="search NokStudio.." name="psw" class="" required></div>
   <div class="p-4 w-36">
   <a href="product.html" id="links" class="mr-5 hover:text-blue-800">Product </a>
-        <a href="explore.html" id="links" class="mr-5 hover:text-blue-800">Explore</a>
+        <a href="explore.html" id="links" class="active mr-5 hover:text-blue-800">Explore</a>
         <a href="forum.html" id="links" class="mr-5 hover:text-blue-800">Forum</a>
         <a href="about.html" id="links" class="mr-5 hover:text-blue-800">About</a>
         <a href="contact.html" id="links" class="mr-5 hover:text-blue-800">Contact</a>
@@ -253,132 +262,269 @@
   </header> <br> <br><br>
 
    
+  <!----------------------------------services--------------------------------------->
 
-<!-------------------------------Explore------------------------------------------------>
 
-<div class="bg-slate-300 h-56">
-  <h1 class="latest py-16 text-center">Explore</h1>
-  </div>
-<br>
-  
-  
-  <!----------------------------------explore img---------------------------------------->
-  
-  
-  <div class="relative">
-    <img src="../public/images/WhatsApp Documents/1a.jpg" class="w-full h-auto lg:h-128">
-    
-    <h3 class="absolute text-2xl text-blue-400 italic top-0 right-0">
-     <div class="week w-auto h-auto p-2 ">
-      Design of the week <br> <i class="italic">by Arch Festus</i>
-    </div> 
-    </h3>
-    </div><br>
-  
-  
+
+
+<div class="bg-slate-600 mt-3 h-10 w-full flex flex-row text-base gap-2 border-slate-600 border-2 fixed z-20 shadow-md">
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+ Interior Design
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  <a href="forum.html" class="">Architectural Desgin</a>
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+ <div class="w-44 bg-slate-50 h-auto border border-1 p-2 cursor-pointer hover:bg-gray-200">
+  Architectural Desgin
+ </div>
+
+
+
+</div> <br> <br> <br>
   <!-------------------------------------explore content---------------------------------------------------->
   
-  <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 p-2 grid-flow-row justify-items-center gap-4 ">
   
-  <div class="explore-contents space-y-8">
-  
-   <div class="explore space-y-4">
-    <div class="container3">
-      <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-      <div class="bottom-left3">BOTTOM LEFT <br><hr>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-      </div></div>
-  
-      <div class="container3">
-        <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-        <div class="bottom-left3">BOTTOM LEFT <br><hr>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-        </div></div>
+<div class="px-12 ">
+ 
+  <div class="grid grid-flow-row grid-flow-col gap-2 ">
+
+    <div class="row-span-3 pt-1 ">
+      <div class="grid grid-flow-row grid-cols-2 gap-2">
+        <div class="row-span-2 space-y-2">
+          <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="h-56 lion">
+            <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+          </div>
+
+          <div class="hovertext"><img src="../public/images/WhatsApp Documents/12Pro 正版授权.jpg" alt="" class="h-40">
+            <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+          </div>
         
-        <div class="container3">
-          <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-          <div class="bottom-left3">BOTTOM LEFT <br><hr>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-          </div></div>    
+        </div>
+  <div class="row-span-1 space-y-2">
+    <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="w-full h-40">
+      <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+    </div>
+    
+    <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="" class="h-56">
+      <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+    </div>
+    
   </div>
+</div>  
+
+<div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-4.jpg" alt="" class="w-full h-64">
+  <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
   
-  </div>
   
-  <div class="explore-contents space-y-8">
+</div>
+      
+      <div class="grid grid-flow-row grid-cols-2 gap-2 pt-2">
+        <div class="row-span-2 space-y-2">
+          <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="" class="h-56">
+            <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+          </div>        
+       
+          </div>
+    <div class="row-span-1 space-y-2">
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3.jpg" alt="" class="h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+    </div>
+      </div>
+
+   
+<div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-4.jpg" alt="" class="w-full h-64">
+  <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
   
-    <div class="explore space-y-4">
-     <div class="container3">
-       <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-       <div class="bottom-left3">BOTTOM LEFT <br><hr>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-       </div></div>
-   
-       <div class="container3">
-         <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-         <div class="bottom-left3">BOTTOM LEFT <br><hr>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-         </div></div>
-         
-         <div class="container3">
-           <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-           <div class="bottom-left3">BOTTOM LEFT <br><hr>
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-           </div></div>    
-   </div>
-   
-   </div>
-  
-   <div class="explore-contents space-y-8">
-  
-    <div class="explore space-y-4">
-     <div class="container3">
-       <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-       <div class="bottom-left3">BOTTOM LEFT <br><hr>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-       </div></div>
-   
-       <div class="container3">
-         <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-         <div class="bottom-left3">BOTTOM LEFT <br><hr>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-         </div></div>
-         
-         <div class="container3">
-           <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-           <div class="bottom-left3">BOTTOM LEFT <br><hr>
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-           </div></div>    
-   </div>
-   
-   </div>
-   
-   <div class="explore-contents space-y-8">
-  
-    <div class="explore space-y-4">
-     <div class="container3">
-       <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-       <div class="bottom-left3">BOTTOM LEFT <br><hr>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-       </div></div>
-   
-       <div class="container3">
-         <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-         <div class="bottom-left3">BOTTOM LEFT <br><hr>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-         </div></div>
-         
-         <div class="container3">
-           <img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="Snow" style="width:377px; height:293px">
-           <div class="bottom-left3">BOTTOM LEFT <br><hr>
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, optio.
-           </div></div>    
-   </div>
-   
-   </div>
-   
+</div>  
+
+<div class="grid grid-rows-2 grid-cols-2 gap-2 pt-2">
+  <div class="row-span-2 space-y-2">
+    <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="h-56">
+      <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+    </div>
+    
+    <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="w-full h-44">
+      <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+    </div>
   
   </div>
+<div class="row-span-2 space-y-2">
+<div class="hovertext"> <img src="../public/images/WhatsApp Documents/A3.jpg" alt="" class="h-44">
+<div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+</div>
+
+
+
+<div class="hovertext"><img src="../public/images/WhatsApp Documents/inn3.jpg" alt="" class=" h-56">
+<div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+</div>
+
+</div>
+</div>
+
+<div class="hovertext pt-2"><img src="../public/images/WhatsApp Documents/A3-4.jpg" alt="" class="w-full h-64">
+  <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
   
+</div> 
+
+
+    </div>
+
+<!--------------------second roll----------------------->
+
+    <div class="col-span-2 space-y-2">
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/1b.jpg" alt="" class="w-96 h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/1b.jpg" alt="" class="w-96 h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/A8-1.jpg" alt="" class="w-96 h-64">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/inn3.jpg" alt="" class="w-96 h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/1b.jpg" alt="" class="w-96 h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/A8-1.jpg" alt="" class="w-96 h-64">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/inn3.jpg" alt="" class="w-96 h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/inn3.jpg" alt="" class="w-96 h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+    </div>
+    
+    <div class="row-span-3 space-y-2">
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/nok2a.jpg" alt="" class="w-full h-64">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+    <div class="grid grid-rows-2 grid-cols-2 gap-2">
+      <div class="row-span-2 space-y-2">
+        <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="h-56">
+          <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+        </div>
+        
+        <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="w-full h-44">
+          <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+        </div>
+      
+      </div>
+<div class="row-span-2 space-y-2">
+  <div class="hovertext"> <img src="../public/images/WhatsApp Documents/A3.jpg" alt="" class="h-44">
+    <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+  </div>
+ 
+  
+
+  <div class="hovertext"><img src="../public/images/WhatsApp Documents/inn3.jpg" alt="" class=" h-56">
+    <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+  </div>
+ 
+</div>
+    </div>
+
+    <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-4.jpg" alt="" class="w-full h-64">
+      <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+    </div>
+   
+    <div class="grid grid-rows-2 grid-cols-2 gap-2">
+      <div class="row-span-2 space-y-2">
+        <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="h-56">
+          <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+        </div>
+        
+        <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-10.jpg" alt="" class="w-full h-44">
+          <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+        </div>
+      
+      </div>
+<div class="row-span-2 space-y-2">
+  <div class="hovertext"> <img src="../public/images/WhatsApp Documents/A3.jpg" alt="" class="h-44">
+    <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+  </div>
+ 
+  
+
+  <div class="hovertext"><img src="../public/images/WhatsApp Documents/inn3.jpg" alt="" class=" h-56">
+    <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+  </div>
+
+</div>
+    </div>
+
+    <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-4.jpg" alt="" class="w-full h-64">
+      <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+    </div>
+   
+  <div class="grid grid-flow-row grid-cols-2 gap-2">
+        <div class="row-span-2 space-y-2">
+          <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3-2.jpg" alt="" class="h-56">
+            <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+          </div>        
+       
+          </div>
+    <div class="row-span-1 space-y-2">
+      <div class="hovertext"><img src="../public/images/WhatsApp Documents/A3.jpg" alt="" class="h-56">
+        <div class="hovertext2 hovertext2blur"><h2 class="text-2xl font-semibold">2bedroom flat</h2> <p class="mt-3">Lorem ipsum dolor sit amet </p> </div>
+      </div>
+      
+    </div>
+      </div>
+ 
+    
+
+    </div>
+      </div>
+    
+
+</div><br>
+
+
+
+
+
   <br><br> <br>
    
  <!------------------------------------footer-------------------------------------------->    
@@ -387,35 +533,39 @@
 
 
 
-<footer class="text-gray-600 body-font ">
+
+
+
+
+ <footer class="text-gray-600 body-font ">
   <div class="container px-5 py-24 mx-auto"><hr><br>
     <div class="flex flex-wrap md:text-left text-center order-first">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a href="product.html" class="text-gray-600 hover:underline hover:text-gray-800">Projects</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a href="explore.html" class="text-gray-600 hover:underline hover:text-gray-800">Explore</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a href="forum.html" class="text-gray-600 hover:underline hover:text-gray-800">Forum</a>
           </li>
          
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">More</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a href="services.html" class="text-gray-600 hover:underline hover:text-gray-800">Services</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a href="about.html" class="text-gray-600 hover:underline hover:text-gray-800">About</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a href="contact.html" class="text-gray-600 hover:underline hover:text-gray-800">Contact</a>
           </li>
           
         </nav>
@@ -424,13 +574,10 @@
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a href="about.css" class="text-gray-600 hover:underline hover:text-gray-800">First Link</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a href="about.css" class="text-gray-600 hover:underline hover:text-gray-800">Second Link</a>
           </li>
          
         </nav>
@@ -439,47 +586,45 @@
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
         <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
           <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-            <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+            <label for="footer-field" class="leading-7 text-sm text-gray-600">Enter Email</label>
             <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
           <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-            Button</button>
+            Subscribe</button>
         </div>
-        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-          <br class="lg:block hidden">waistcoat green juice
+        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Subcribe to get the latest NokStudio news
+          
         </p>
       </div>
     </div>
   </div>
   <div class="bg-gray-100">
     <div class="container px-4 py-2 mx-auto flex items-center sm:flex-row flex-col">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl">Tailblocks</span>
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="../public/images/WhatsApp Documents/NOK 3.jpg" alt="" class="w-16 h-12">
+        <span class="ml-1 text-3xl">Studio</span>
       </a>
-      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2022 NokStudio —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Constance</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a class="text-gray-500">
+        <a href="" class="text-gray-500 hover:text-blue-700">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a href="" class="ml-3 text-gray-500 hover:text-blue-700">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a href="" class="ml-3 text-gray-500 hover:text-blue-700">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a href="" class="ml-3 text-gray-500 hover:text-blue-700" >
           <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
             <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
@@ -489,7 +634,7 @@
     </div>
   </div>
 </footer>
- 
+
 
 <script src="index.js"></script>
     
